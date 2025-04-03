@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Product Board</title>
+    <style>
+        div {
+            border: solid 1px black;
+        }
+
+        .container {
+            height: 949px;
+            width: 1199px;
+            display: flex;
+        }
+
+        .leftblank {
+            width: 7%;
+        }
+
+        .rightblank {
+            width: 7%;
+        }
+
+        .body {
+            width: 86%;
+        }
+
+        .upperblank{
+            height: 7%;
+        }
+        .lowerblank{
+            height: 7%; 
+        }
+        .contents{
+            height: 86%;
+        }
+        .text{
+            font-weight:500;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        
+       
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftblank"></div>
+        <div class="body">
+            <div class="upperblank"></div>
+            <div class="contents">
+                <form action="search" method="post">
+                    <div class=text>상품명을 작성하세요.</div>
+                    <div><input type="text" class="productName"></div>
+                    <div class=text>재고를 작성하세요.</div>
+                    <div><input type="text" class="productStock"></div>
+                    <div class=text>가격을 작성하세요.</div>
+                    <div><input type="text" class="productPrice"></div>
+                    <div class=text>상품설명을 작성하세요.</div>
+                    <div><input type="text" class="description"></div>
+
+                </form>
+            </div>
+            <div class="lowerblank"></div>
+        </div>
+        <div class="rightblank"></div>
+    </div>
+</body>
+
+</html>
