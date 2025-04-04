@@ -15,7 +15,7 @@
         }
 
         .container {
-            height: 949px;
+            height: 806px;
             width: 1199px;
             display: flex;
         }
@@ -33,19 +33,57 @@
         }
 
         .upperblank{
-            height: 7%;
+            height: 12%;
         }
-        .lowerblank{
-            height: 7%; 
-        }
+       
         .contents{
-            height: 86%;
+            height: 88%;
         }
         .text{
             font-weight:500;
             font-family: "Noto Sans KR", sans-serif;
+            font-size: 24px;
         }
+        .productName, .productStock, .productPrice
+            {
+             width: 100%;
+             height:60px;
+             font-family: 굴림;
+             border: solid, 5px, #BAD9CE;
+             border-radius: 20px;    
+                    
+            }
+        .description {
+             width: 100%;
+             height:150px;
+             font-family: 굴림;
+             border: solid, 5px, #BAD9CE;
+             border-radius: 20px;   
+        }
+
+        .button{
+            width: 110px;
+            height: 45px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 20px;
+            color: white;
+            background-color: #118C8C;
+            border-radius: 5px;
+            border-color: #118C8C;
+
+
+
+        }
+        .button2{
+            text-align: center;
+        }
+
+
+
         
+
+        
+
        
 
 
@@ -58,15 +96,24 @@
         <div class="body">
             <div class="upperblank"></div>
             <div class="contents">
-                <form action="search" method="post">
-                    <div class=text>상품명을 작성하세요.</div>
+                
+                    <div class="text">상품명을 작성하세요.</div>
                     <div><input type="text" class="productName"></div>
-                    <div class=text>재고를 작성하세요.</div>
+                    <div class="text">재고를 작성하세요.</div>
                     <div><input type="text" class="productStock"></div>
-                    <div class=text>가격을 작성하세요.</div>
+                    <div class="text">가격을 작성하세요.</div>
                     <div><input type="text" class="productPrice"></div>
-                    <div class=text>상품설명을 작성하세요.</div>
-                    <div><input type="text" class="description"></div>
+                    <div class="text">상품설명을 작성하세요.</div>
+                    <div><textarea name="content"
+                        cols="150"
+                        rows="10"
+                        style="resize:none;"
+                        class= "description"
+                        ></textarea></div><br><br>
+                    <div class="button2"><input type="submit" value="등록" class="button">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="reset" value="초기화" class="button"></div>
+
 
                 </form>
             </div>
