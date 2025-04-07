@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Product Board</title>
+    <style>
+        div {
+            border: solid 0.0625rem white;
+        }
+
+        .root {
+            height: 50rem;
+            width: 100%;
+            display: flex;
+        }
+
+        .leftblank {
+            width: 7%;
+        }
+
+        .rightblank {
+            width: 7%;
+        }
+
+        .body {
+            width: 86%;
+        }
+
+        .upperblank {
+            height: 30%;
+        }
+
+        .signal {
+            height: 15%;
+        }
+
+        .mark {
+            text-align: center;
+        }
+
+        .message {
+            height: 8%;
+            font-weight: 400;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+
+        }
+
+        .btnMsg {
+            height: 5%;
+            text-align: center;
+
+        }
+
+        .lowyerblank {
+            height: 42%;
+        }
+
+        .button1 {
+            background-color: #0e6973;
+            color: white;
+            font-weight: 500;
+
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1em;
+            border-radius: 1.25rem;
+            width: 10rem;
+            height: 2.5rem;
+            border-color: var(--strong-color);
+        }
+        .button1:hover {
+            background-color: white;
+            color:#0e6973;
+            font-weight: 500;
+
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1em;
+            border-radius: 1.25rem;
+            width: 10rem;
+            height: 2.5rem;
+            border: 1px, solid, #118C8C;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftblank"></div>
+        <div class="body">
+            <div class="upperblank"></div>
+            <div id="signal">
+                <p class="mark"><i class="fa-solid fa-triangle-exclamation"
+                        style="font-size: 8.125rem; color: #0e6973"></i></p>
+            </div>
+            <div class="message">Something went wrong.</div>
+            <div class="btnMsg">
+                <form action="">
+                    <input type="submit" value="Back to home" class="button1">
+                </form>
+            </div>
+            <div class="lowyerblank"></div>
+        </div>
+        <div class="rightblank"></div>
+    </div>
+</body>
+
+</html>
